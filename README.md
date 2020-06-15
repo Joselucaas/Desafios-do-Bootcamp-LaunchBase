@@ -3,5 +3,5 @@
 <p><i>(Em andamento)</p>
 
 <h1>
-<img src="Img/LaunchBase.png" width= 300px height=200px>
+<img src="Img/LaunchBase.png" width= 500px height=300px>
 </h1>
