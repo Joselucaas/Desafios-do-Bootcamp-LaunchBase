@@ -11,8 +11,8 @@ Aqui estão as resoluções dos desafios feitos durante o **Bootcamp LaunchBase*
 
 ---
 
-## ⚡ Tecnologias Utilizadas 
+## ⚡  Tecnologias Utilizadas 
 - JavaScript
 ---
-## ✅ Status do Bootcamp
+## ✅  Status do Bootcamp
 - Em andamento
