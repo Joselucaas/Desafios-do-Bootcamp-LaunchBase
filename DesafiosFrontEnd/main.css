@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
+:root {
+    --rckt-color: rgb(102, 51, 204)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ header {
     text-align: center;
     padding: 30px;
     border-bottom: 1px solid rgba(11, 38, 61);
-    background-color: rgb(102, 51, 204);
+    background-color: var(--rckt-color);
 }
 
 .menu a {
@@ -89,12 +93,12 @@ main ul li {
 
 .menu-footer a {
     text-decoration: none;
-    color: rgb(102, 51, 204);
+    color: var(--rckt-color);
     margin: auto 8px;
 }
 
 .menu-footer a:hover {
     transition: 300ms;
-    border-bottom: 2px solid rgb(102, 51, 204);
+    border-bottom: 2px solid var(--rckt-color);
 }
 
