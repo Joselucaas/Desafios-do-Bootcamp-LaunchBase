@@ -1,7 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 :root {
-    --rckt-color: rgb(102, 51, 204)
+    --rckt-color: rgb(102, 51, 204);
+    --color-lb: rgb(255, 144, 4);
+    --color-go: rgb(0, 177, 124);
 }
 
 * {
@@ -41,7 +43,7 @@ main img {
     margin: 10px 20px;
 }
 
-main h1 {
+h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 20px;
@@ -157,24 +159,147 @@ main ul li {
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px auto;
+    margin: 40px 0 0 0;
     font-size: 16px;
 }
 
-.info p {
+.info #mod {
    color: rgba(255, 255, 255, 0.815);
+   padding: 1px;
+   background-color: var(--rckt-color);
+   border-radius: 50px;
+   text-align: center;
+   line-height: 26px;
 }
-
 .info #info-money {
-    background-color: var(--rckt-color);
     padding: 3px;
     border-radius: 50px;
+    border: 2px solid var(--rckt-color);
     text-align: center;
+    margin: auto 10px;
+    color: white;
 }
 
-.card:hover {
+.card#starter:hover {
     border: 3px solid var(--rckt-color);
 }
 
+/* Card LaunchBase*/
 
+.circle-lb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid var(--color-lb);
+    margin: -23px auto 0px;
+}
+.circle-lb #lb {
+    font-size: 20px;
+    color: var(--color-lb);
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+} 
 
+.description#lb p spam {
+    color: var(--color-lb);
+}
+
+.info#lb #mod {
+    background-color: var(--color-lb);
+}
+
+.info#lb #info-money {
+    border: 2px solid var(--color-lb);
+}
+
+.card#launchbase:hover {
+    border: 3px solid var(--color-lb);
+}
+
+/* Card GoStack */
+
+.circle-go {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid var(--color-go);
+    margin: -23px auto 0px;
+}
+
+.circle-go p {
+    font-size: 20px;
+    color: var(--color-go);
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.description#go spam{
+    color: var(--color-go);
+}
+
+.info#go #mod {
+    background-color: var(--color-go);
+}
+
+.info#go #info-money {
+    border: 2px solid var(--color-go);
+}
+
+.card#gostack:hover {
+    border: 3px solid var(--color-go);
+}
+
+/* Criação do Modal */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 89%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    margin: 5vh auto;
+}
+
+.modal.expand {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.modal .expandir {
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8; 
+    cursor: pointer;
+}
