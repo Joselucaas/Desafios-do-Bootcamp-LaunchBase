@@ -17,3 +17,6 @@ Aqui estão as resoluções dos desafios feitos durante o **Bootcamp LaunchBase*
 
 ## ✅ Status do Bootcamp
 - Em andamento
+
+## 📝 Licença
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
