@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Error 404</title>
+{% endblock %}
+
+{% block content %}
+    <div class="error">
+        <img id="erro" src="/img/error.svg" alt="">       
+    </div>    
+    <h1 id="not-found">Página não encontrada!</h1>
+{% endblock %}
