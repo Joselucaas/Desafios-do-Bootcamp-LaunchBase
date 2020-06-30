@@ -28,7 +28,7 @@ server.use(function(req, res) {
 
 // ----------------------------------------
 
-// Trazando o front-end do site para o servidor
+// Porta em que se enocntra o site
 server.listen(2001, function() {
     console.log("Server is running")
 })
