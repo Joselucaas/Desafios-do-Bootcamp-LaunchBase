@@ -13,67 +13,28 @@
 
         <section class="cards">
 
-            <div class="card" id="starter">
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
 
-                <div class="circle">
-                    <p>01</p>
+                <div class="{{item.circle}}">
+                    <p id="{{item.id_main}}">{{item.number}}</p>
                 </div>
 
                 <div class="image">
-                    <img src="/img/starter.svg" alt="" srcset="">
+                    <img src="{{item.image}}" alt="{{item.id}}" srcset="">
                 </div>
 
-                <div class="description">
-                    <p><spam>Torne-se um programador desejado</spam> no mercado com esses cursos gratuitos.</p>
+                <div class="description" id='{{item.id_main}}'>
+                    <p>{{item.description}}</p>
                 </div>
 
 
-                <div class="info">
-                    <p id="mod">5 módulos</p>
-                    <p id="info-money">Free</p>
-                </div>
-            </div>
-
-            <div class="card"  id="launchbase">
-
-                <div class="circle-lb">
-                    <p id="lb">02</p>
-                </div>
-
-                <div class="image">
-                    <img src="/img/launchbase.svg" alt="" srcset="">
-                </div>
-
-                <div class="description" id="lb">
-                    <p><spam>Domine programação do zero</spam> e tenha acesso às melhores oportunidades do mercado.</p>
-                </div>
-
-                <div class="info" id="lb">
-                    <p id="mod">16 módulos</p>
-                    <p id="info-money">Pago</p>
+                <div class="info" id="{{item.id_main}}">
+                    <p id="mod">{{item.modules}}</p>
+                    <p id="info-money">{{item.price}}</p>
                 </div>
             </div>
-
-            <div class="card" id="gostack">
-
-                <div class="circle-go">
-                    <p>03</p>
-                </div>
-
-                <div class="image">
-                    <img src="/img/gostack.svg" alt="" srcset="">
-                </div>
-
-                <div class="description" id="go">
-                    <p><spam>Treinamento imersivo</spam> nas tecnologias mais modernas de desenvolvimento web e mobile.</p>
-                </div>
-
-
-                <div class="info" id="go">
-                    <p id="mod">27 módulos</p>
-                    <p id="info-money">Pago</p>
-                </div>
-            </div>
+            {% endfor %}
         </section>
 
         <div class="modal-overlay" >
