@@ -14,6 +14,9 @@ Aqui estão as resoluções dos desafios feitos durante o **Bootcamp LaunchBase*
 - JavaScript
 - HTML
 - CSS
+- Node.Js
+- Nunjucks
+- Express
 
 ## ✅ Status do Bootcamp
 - Em andamento
