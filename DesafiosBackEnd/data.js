@@ -1,5 +1,6 @@
 module.exports = [
     {
+        title: "Starter",
         id: "starter",
         circle: "circle",
         number: "01",
@@ -9,6 +10,7 @@ module.exports = [
         price: "Free"
     },
     {
+        title: "Launchbase",
         id: "launchbase",
         circle: "circle-lb",
         id_main: "lb",
@@ -18,7 +20,8 @@ module.exports = [
         modules: "16 módulos",
         price: "Pago",
     },
-    {
+    {   
+        title: "GoStack",
         id: "gostack",
         circle: "circle-go",
         id_main: "go",

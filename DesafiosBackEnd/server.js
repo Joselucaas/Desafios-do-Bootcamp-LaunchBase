@@ -38,13 +38,29 @@ server.get('/', function(req, res) {
             {name: "Facebook", link: "https://www.facebook.com/rocketseat"}
         ]
     }
-
     return res.render("about", {date})
 })
 
 server.get('/courses', function(req, res) {
     return res.render("courses", { items: dados}) // Passsando o data.js do back para o front-end
 })
+
+server.get("/bootcamps", function (req, res) {
+    const id = req.query.id
+    const dado = dados.find(function(dado){
+       if (dado.id == id) {
+           return true
+       }
+    })
+
+    if (!dado) {
+        return res.render("not-found")
+    }
+   
+    return res.render('bootcamps', {item: dado})
+   
+  
+  })
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
